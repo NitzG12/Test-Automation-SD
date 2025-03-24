@@ -17,7 +17,5 @@ export class EmployeePage {
         await this.page.getByRole('button', { name: 'Sign In' }).click();
     }
 
-    // async verifyLogin() {
-    //     await this.page.waitForSelector('text=Welcome Employee');
-    // }
+    
 }
