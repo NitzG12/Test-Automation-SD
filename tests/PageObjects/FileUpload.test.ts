@@ -7,6 +7,8 @@ test('Upload', async ({ page }) => {
     const uploadInput = await page.locator('//html/body/app/div/div[2]/div[2]/ess-personal-info/gp-contract-data/gp-modal/div/div/div/div[2]/form/gp-form-card-field[2]/div/div/gp-form-field-file/label/input');
     //const uploadInput = await page.locator('input[test-id="CertificationScannedCopy"]');
 
+   // await page.getByRole('button', { name: ' Add' }).click();
+
   //  Upload a file
     await uploadInput.setInputFiles(['testFile.txt'],{timeout: 15000});
 

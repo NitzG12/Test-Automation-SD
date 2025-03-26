@@ -16,9 +16,15 @@ test('test', async ({ page }) => {
   await page.getByText('Certifications', { exact: true }).click();
   await page.getByRole('button', { name: ' Add' }).click();
   await page.getByRole('textbox', { name: ' Choose or drop a file' }).click();
-  await page.getByRole('textbox', { name: ' Choose or drop a file' }).setInputFiles('Screenshot 2025-03-20 161852.png');
+  await page.getByRole('textbox', { name: ' Choose or drop a file' }).setInputFiles('file2.pdf');
   await page.locator('datepicker-input i').click();
   await page.getByRole('button', { name: '›' }).click();
   await page.getByRole('button', { name: '24' }).click();
   await page.getByRole('button', { name: 'Submit' }).click();
 });
+
+
+
+
+
+
